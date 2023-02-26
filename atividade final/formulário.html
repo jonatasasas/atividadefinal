@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+
+    <style>
+        
+        
+
+        body{
+            background-image: linear-gradient(to right, #00072e, #001e3f,#012d6e);
+        }
+
+        main{
+            
+            height: 0px;
+            background-color: #E3ECE3;
+            padding-top: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 50px;
+            box-shadow: 2px 5px 5px #001068;
+
+            margin: auto; 
+            min-height: 300px; 
+            max-width: 1250px;
+            text-align: center;
+        }
+
+        header{ 
+            min-height: 70px; 
+            max-width: 1290px;
+            
+            
+            justify-content: space-between;
+            
+            margin: auto;
+            padding-top: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            box-shadow: 2px 5px 5px #001068;
+            background-image: linear-gradient(to left, #00072e, #001e3f,#012d6e);
+        }
+
+        header>h1{
+            display: block;
+            text-align: center;
+            color: aliceblue;
+            text-decoration: underline;
+            text-shadow: 1px 2px 2px black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+            }
+        main>p{
+            text-align: justify;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        footer{
+            
+            background-image: linear-gradient(to left, #00072e, #001e3f,#012d6e);
+            color: aliceblue;
+            min-height: 25px;
+            max-width: 1274px;
+            margin: auto;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            padding: 8px;
+            text-align: center;
+            box-shadow: 1px 2px 2px #001068;
+        }
+
+        footer>a{
+            color: #00d8f5;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+
+        footer>a:hover{
+            font-size: 25px;
+            text-align: center;
+            text-shadow: 2px 3px 3px #027cee;
+            
+            color: aliceblue;
+        }
+
+        footer{
+            font-size: 20px;
+        }
+
+        form>input{
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h1>Formulário de Satifação</h1>
+    </header>
+
+    <main>
+         
+        <form action="cadastro.php" method="post" autocomplete="off">
+            
+            <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome" required placeholder="Nome do Usuário">
+            </p>
+             
+            <p><label for="iprofissão">Profissão:</label> <input type="text" name="profissão" id="iprofissão" required placeholder="Profissão do Usuário">
+            </p>
+             
+            
+
+            <p><label for="ianimal">Favorito:</label> <input type="text" name="animal" id="animal" placeholder="Animal marítimo favorito">
+            </p>
+
+            <p><label for="iinteresse">Interesse:</label> <input type="text" name="interesse" id="interesse" placeholder="Qual animal lhe interessa?">
+            </p>
+            
+            <p><label for="iopnião">Opnião:</label> <input type="text" name="opnião" id="opnião" required placeholder="Opnião sobre o site">
+            </p>
+            
+            <p><label for="iindicação">Indicação:</label> <input type="text" name="indicação" id="indicação" placeholder="Indicação sobre outros site">
+            </p>
+
+            <p><label for="idicas">Dicas:</label> <input type="text" name="dicas" id="idicas" placeholder="Dicas para melhoria">
+            </p>
+            <p><input type="submit" value="Enviar"></p>
+
+
+        </form>
+
+    </main>
+
+    <footer>
+        <a href="página_principal.html">Voltar para Página Inicial</a> 
+    </footer>
+    
+</body>
+</html>
